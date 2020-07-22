@@ -19,14 +19,14 @@ body{
    flex-direction: column;
    text-align: center;
    margin: 50px auto;
-   padding: 50px;
-   width: 220px;
+   padding: 50px 30px;
+   width: 300px;
    border-radius: 5px;
    box-shadow: rgba(0,0,0,0.1) 0 0 10px;
 }
 .newTask{
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
 }
 .label{
    padding-bottom: 20px;
@@ -39,24 +39,32 @@ input{
    border-radius: 5px;
 }
 .addButton{
-   padding: 5px 15px;
    margin-left: 10px;
    border: 2px solid #50e093;
    border-radius: 5px;
    background: #50e093;
+   height: 30px;
+   width: 50px;
+   vertical-align: middle;
 }
 .tasks{
    background: #50e093;
-   padding: 30px 50px;
+   padding: 30px 30px;
 }
 .task{
    display: flex;
    justify-content: space-between;
-   margin: 5px;
+   margin: 5px 0;
    padding: 10px 20px;
    border: 2px solid #fff;
    border-radius: 5px;
    box-shadow: 0px 1px 0px 0px #c9cfd4;
    text-align: left;
    background: #fff;
+}
+.task-text{
+   text-align: left;
+}
+.decore{
+   text-decoration: line-through;
 }

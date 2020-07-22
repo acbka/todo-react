@@ -1,15 +1,10 @@
 import React from 'react';
-import {Button} from './button'
+import {Task} from './task';
 
-export const Tasks = ({items, deleteItem}) => { 
-   const list = items.map((elem, index) => {
-      return <div className="task" key={index}>{elem} 
-         <Button className="delete" clickButton = {deleteItem} value = {"delete"}/>
-      </div>
-   })
-
+export const Tasks = ({items, setDone, deleteItem}) => {
    return (
-      list
-   );
-}
-
+      <>
+         {items.map(task => <Task key={task.id} task={task} setDone={setDone} deleteItem={deleteItem.bind(task.status, task.id)} />)}
+      </>
+   )
+};
