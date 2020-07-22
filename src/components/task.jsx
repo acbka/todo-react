@@ -1,7 +1,6 @@
 import React from 'react';
 import {Button} from './button';
-import {Checkbox} from './checkbox';
-import bin from '../images/delete.png'
+import {Checkbox} from './checkbox'
 
 export const Task = ({setDone, task, deleteItem}) => {
    const handleCheckbox = (id, status) => {
